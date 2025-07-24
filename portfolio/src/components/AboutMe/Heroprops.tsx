@@ -10,7 +10,7 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({
-  profileImage = '../src/assets/images/ml_pfp.JPG', 
+  profileImage = '../assets/images/ml_pfp.JPG', 
   pinyin = 'lù qīng yán',
   chineseName = '陆 清 妍',
   englishName = 'Monica Lu',

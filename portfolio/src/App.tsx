@@ -14,7 +14,6 @@ const Projects = lazy(() => import('./components/Projects/Projects'));
 const ComingSoon = lazy(() => import('./components/ComingSoon/ComingSoon'));
 const NotFound = lazy(() => import('./components/Page404/Page404'));
 const Footer = lazy(() => import('./components/Footer/Footer'));
-// const Resume = lazy(() => import('./components/Resume/Resume'));
 
 const AppContent: React.FC = () => {
   const { theme } = useTheme();

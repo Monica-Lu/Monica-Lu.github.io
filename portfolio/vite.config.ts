@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import viteTsconfigPaths from 'vite-tsconfig-paths'
 
 export default defineConfig({
-    base: '/Monica-Lu.github.io/',
+    base: '/',
     build: {outDir: 'build'},
     plugins:[
         react(),
