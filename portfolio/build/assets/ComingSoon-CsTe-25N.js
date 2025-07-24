@@ -1,0 +1,1 @@
+import{j as n}from"./index-D36E9ycb.js";const o=()=>n.jsxs("div",{className:"",children:[n.jsx("h1",{children:"Coming Soon"}),n.jsx("p",{children:"This page is under construction. Stay tuned!"})]});export{o as default};
