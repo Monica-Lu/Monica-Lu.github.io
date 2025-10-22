@@ -67,18 +67,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./portfolio/dist/static
-
-      - name: Static deploy to Github Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-
-      # Optional: Configure GitHub Pages
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v4
-        with:
-          branch: gh-pages
-          folder: ./portfolio/dist/static
+          publish_dir: ./portfolio/dist
 
       - name: Commit and Push changes
         run: |
