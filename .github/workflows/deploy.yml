@@ -67,5 +67,23 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./portfolio/dist
+          publish_dir: ./portfolio/dist/static
 
+      - name: Static deploy to Github Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      # Optional: Configure GitHub Pages
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v4
+        with:
+          branch: gh-pages
+          folder: ./portfolio/dist/static
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .
+          git commit -m "Deploy updates"
+          git push origin main
