@@ -47,7 +47,6 @@ jobs:
         run: |
           cd portfolio
           npm install
-          npm ci
 
       - name: Build Website
         run: |
