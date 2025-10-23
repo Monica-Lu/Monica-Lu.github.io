@@ -44,9 +44,7 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: |
-          cd portfolio
-          npm install
+        run: npm install
 
       - name: Build Website
         run: |
