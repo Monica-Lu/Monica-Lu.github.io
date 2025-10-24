@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import JSX from 'react';
 
 export default function NotFound(): JSX.Element {
   const navigate = useNavigate();
