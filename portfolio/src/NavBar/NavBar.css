@@ -1,0 +1,130 @@
+/* NavBar Root Container */
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
+  border-bottom: 1px solid;
+}
+
+/* Light theme styles */
+[data-theme="light"] .NavBar {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom-color: #e1e4e8;
+}
+
+/* Dark theme styles */
+[data-theme="dark"] .NavBar {
+  background-color: rgba(13, 17, 23, 0.95);
+  border-bottom-color: #30363d;
+}
+
+/* Logo Link */
+.logo-link {
+  text-decoration: none;
+}
+
+.logo-link:hover {
+  opacity: 0.8;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+[data-theme="light"] .logo-text {
+  color: #24292f;
+}
+
+[data-theme="dark"] .logo-text {
+  color: #f0f6fc;
+}
+
+/* Navigation List */
+.NavBar-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Links */
+.link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  position: relative;
+}
+
+[data-theme="light"] .link {
+  color: #656d76;
+}
+
+[data-theme="dark"] .link {
+  color: #8b949e;
+}
+
+/* Link hover states */
+.link:hover {
+  text-decoration: none;
+}
+
+[data-theme="light"] .link:hover {
+  color: #24292f;
+  background-color: #f3f4f6;
+}
+
+[data-theme="dark"] .link:hover {
+  color: #f0f6fc;
+  background-color: #21262d;
+}
+
+/* Active link styles (optional) */
+.link[data-active] {
+  font-weight: 600;
+}
+
+[data-theme="light"] .link[data-active] {
+  color: #0969da;
+}
+
+[data-theme="dark"] .link[data-active] {
+  color: #58a6ff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .NavBar {
+    padding: 1rem;
+  }
+  
+  .NavBar-list {
+    gap: 1rem;
+  }
+  
+  .logo-text {
+    font-size: 1.25rem;
+  }
+  
+  .link {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .NavBar-list {
+    gap: 0.5rem;
+  }
+  
+  .link {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+  }
+}

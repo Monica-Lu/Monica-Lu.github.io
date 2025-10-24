@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+venv/
+.vscode/
+poetry.lock
+.env
+.DS_Store
+
+/node_modules

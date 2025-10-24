@@ -1,0 +1,111 @@
+/* Dark theme styles (default) */
+.footer.dark {
+  background-color: #111827;
+  color: white;
+  padding: 32px 16px;
+}
+
+.footer.dark .social-icon {
+  color: #d1d5db;
+  transition: color 0.2s ease;
+  width: 24px;
+  height: 24px;
+}
+
+.footer.dark .social-icon:hover {
+  color: white;
+}
+
+.footer.dark .footer-divider {
+  border-top: 1px solid #374151;
+  padding-top: 24px;
+}
+
+.footer.dark .footer-info {
+  color: #9ca3af;
+}
+
+.footer.dark .footer-link {
+  color: #60a5fa;
+}
+
+.footer.dark .footer-link:hover {
+  color: #93c5fd;
+}
+
+/* Light theme styles */
+.footer.light {
+  background-color: #f9fafb;
+  color: #111827;
+  padding: 32px 16px;
+}
+
+.footer.light .social-icon {
+  color: #6a6c71;
+  width: 24px;
+  height: 24px;
+}
+
+.footer.light .social-icon:hover {
+  color: #2d3139;
+}
+
+.footer.light .footer-divider {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 24px;
+}
+
+.footer.light .footer-info {
+  color: #6b7280;
+}
+
+.footer.light .footer-link {
+  color: #31343b;
+}
+
+.footer.light .footer-link:hover {
+  color: #31343b;
+}
+
+/* Common styles for both themes */
+.footer {
+  width: 100%;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: 2rem;
+}
+
+.footer-container {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.social-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.powered-by,
+.copyright {
+  text-align: center;
+  margin: 0;
+}
+
+.footer-link {
+  text-decoration: none;
+}
