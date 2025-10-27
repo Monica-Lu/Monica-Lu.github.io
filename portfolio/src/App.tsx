@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Theme } from '@radix-ui/themes';
 import { ThemeProvider, useTheme } from './ThemeToggle/ThemeProvider';
 import '@radix-ui/themes/styles.css';
-import { Navigate } from "react-router-dom";
 
 import { NavBar } from './NavBar/NavBar';
 import './index.css';
@@ -24,7 +23,7 @@ const AppContent: React.FC = () => {
           <NavBar />
           <Suspense fallback={<div>Loading...</div>}>
             <Routes>
-              <Route path="/" element={<AboutMe />} />
+              <Route path="/" element={<ComingSoon />} />
               <Route path="/aboutme" element={<AboutMe />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="*" element={<NotFound />} />
