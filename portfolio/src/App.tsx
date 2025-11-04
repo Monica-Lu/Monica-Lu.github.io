@@ -1,8 +1,8 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Theme } from '@radix-ui/themes';
+// import { Theme } from '@radix-ui/themes';
 // import { ThemeProvider, useTheme } from './ThemeToggle/ThemeProvider';
-import '@radix-ui/themes/styles.css';
+// import '@radix-ui/themes/styles.css';
 
 // import { NavBar } from './NavBar/NavBar';
 // import './index.css';
