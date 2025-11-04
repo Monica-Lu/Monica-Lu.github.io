@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // const AboutMe = lazy(() => import('./AboutMe/AboutMe'));
 // const Projects = lazy(() => import('./Projects/Projects'));
 const ComingSoon = lazy(() => import('./ComingSoon/ComingSoon'));
-// const NotFound = lazy(() => import('./Page404/Page404'));
+const NotFound = lazy(() => import('./Page404/Page404'));
 // const Footer = lazy(() => import('./Footer/Footer'));
 
 const AppContent: React.FC = () => {
@@ -24,9 +24,9 @@ const AppContent: React.FC = () => {
           <Suspense fallback={<div>Loading...</div>}>
             <Routes>
               <Route path="/" element={<ComingSoon />} />
-              {/* <Route path="/aboutme" element={<AboutMe />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="*" element={<NotFound />} /> */}
+              {/* <Route path="/aboutme" element={<AboutMe />} /> 
+              <Route path="/projects" element={<Projects />} /> */}
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
           {/* <Footer /> */}
