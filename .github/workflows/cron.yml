@@ -1,0 +1,26 @@
+name: Website UP CRON
+
+on: 
+  schedule:
+    - cron: '0 */6 * * *' 
+  workflow_dispatch:
+
+jobs:
+  check_website:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Github Actions Checkout
+          uses: actions/checkout@v4
+
+        - name: Set up Python
+          uses: actions/setup-python@v4
+          with:
+            python-version: '3.14'
+
+        - name: Install dependencies
+          run: pip install requests
+          # npm install node-fetch nodemailer
+                
+        - name: Check Website Status
+          run: python monitor/checkSite.py
+          # npx ts-node monitor/checkSite.ts
